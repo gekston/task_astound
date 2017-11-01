@@ -24,8 +24,8 @@ gulp.task('sprite', function () {
     imgPath: '../image/sprite.png',
     padding: 5
   }));
-  spriteData.img.pipe(gulp.dest('./dist/image/')); // путь, куда сохраняем картинку
-  spriteData.css.pipe(gulp.dest('./source/style/')); // путь, куда сохраняем стили
+  spriteData.img.pipe(gulp.dest('./dist/image/')); // пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+  spriteData.css.pipe(gulp.dest('./source/style/')); // пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 });
 
 gulp.task('styles', function() {
@@ -63,9 +63,4 @@ gulp.task('compress', function() {
 
 gulp.watch(paths.cssSource + '**/*.scss', ['styles', 'compress']);
 
-gulp.task('default', ['styles', 'copy']);
-
-gulp.task('copy', function () {
-  gulp.src('./node_modules/jquery/dist/jquery.min.js')
-      .pipe(gulp.dest('./dist/js/'));
-});
+gulp.task('default', ['styles']);
