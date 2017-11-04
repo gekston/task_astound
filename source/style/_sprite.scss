@@ -9,6 +9,17 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
+$icon-close-name: 'icon-close';
+$icon-close-x: 138px;
+$icon-close-y: 55px;
+$icon-close-offset-x: -138px;
+$icon-close-offset-y: -55px;
+$icon-close-width: 15px;
+$icon-close-height: 15px;
+$icon-close-total-width: 167px;
+$icon-close-total-height: 142px;
+$icon-close-image: '../image/sprite.png';
+$icon-close: (138px, 55px, -138px, -55px, 15px, 15px, 167px, 142px, '../image/sprite.png', 'icon-close', );
 $icon-facebook-name: 'icon-facebook';
 $icon-facebook-x: 0px;
 $icon-facebook-y: 0px;
@@ -89,7 +100,7 @@ $slider-shevron-prev: (0px, 92px, 0px, -92px, 29px, 50px, 167px, 142px, '../imag
 $spritesheet-width: 167px;
 $spritesheet-height: 142px;
 $spritesheet-image: '../image/sprite.png';
-$spritesheet-sprites: ($icon-facebook, $icon-instagram, $icon-pinterest, $icon-twitter, $icon-ytube, $slider-shevron-next, $slider-shevron-prev, );
+$spritesheet-sprites: ($icon-close, $icon-facebook, $icon-instagram, $icon-pinterest, $icon-twitter, $icon-ytube, $slider-shevron-next, $slider-shevron-prev, );
 $spritesheet: (167px, 142px, '../image/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
