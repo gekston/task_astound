@@ -1,0 +1,9 @@
+.product__rating {
+  position: relative;
+  display: inline-block;
+  @include sprite($grey-stars);
+  &-red {
+    display: inline-block;
+    @include sprite($red-stars);
+  }
+}
