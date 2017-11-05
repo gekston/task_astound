@@ -1,0 +1,66 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 39px;
+  height: 39px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0;
+  margin-right: 10px;
+  &__facebook,
+  &__twitter,
+  &__pinterest,
+  &__tube,
+  &__instagram {
+    &:hover {
+      cursor: pointer;
+    }
+    &::after {
+      content: '';
+      display: inline-block;
+      background-repeat: no-repeat;
+    }
+  }
+  &__facebook {
+    &::after {
+      @include sprite($icon-facebook);
+    }
+  }
+  &__twitter {
+    &::after {
+      @include sprite($icon-twitter);
+    }
+  }
+  &__pinterest {
+    &::after {
+      @include sprite($icon-pinterest);
+    }
+  }
+  &__tube {
+    &::after {
+      @include sprite($icon-ytube);
+    }
+  }
+  &__instagram {
+    &::after {
+      @include sprite($icon-instagram);
+    }
+  }
+  &__close {
+    display: block;
+    float: right;
+    top: 2px;
+    position: relative;
+    margin-right: 10px;
+    border: 0;
+    background: none;
+    &::after {
+      content: '';
+      display: block;
+      @include sprite($icon-close);
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

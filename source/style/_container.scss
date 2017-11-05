@@ -1,0 +1,209 @@
+.container {
+  max-width: 835px;
+  margin: 0 auto;
+  &.desktop {}
+  &.tablet {
+    .product__name {
+      float: none;
+      width: 100%;
+      margin: 0 0 30px;
+    }
+    max-width: 640px;
+    .product__img {
+      width: 335px;
+      height: 355px;
+      margin: 0 20px 0 0;
+      &-big {
+        width: 275px;
+        height: 353px;
+      }
+    }
+    .product__info {
+      &-number {
+        margin: -3px 0 0 0;
+      }
+      &-price {
+        font-size: 36px;
+        margin: 7px 0 0px;
+      }
+      &-details {
+        display: block;
+        margin: 14px 0 0 0;
+      }
+      &-description {
+        margin: 7px 0;
+      }
+    }
+    .product__size-title {
+      display: block;
+      margin: 27px 0 10px;
+      &-invisibl {
+        display: inline;
+      }
+    }
+    .product__share {
+      margin: 5px 0;
+      position: initial;
+      &-title {
+        visibility: hidden;
+      }
+      &-link {
+        display: block;
+        padding: 0;
+        background-color: initial;
+        box-shadow: none;
+        z-index: 3;
+        width: initial;
+        left: 15px;
+        top: 11%;
+        .icon {
+          display: block;
+          margin: 12px 0 0 0;
+        }
+        &__title {
+          display: none;
+        }
+      }
+      &-triangle {
+        display: none;
+      }
+    }
+    .product__size-label {
+      margin: 0 15px 0 0;
+    }
+    .product__add {
+      margin: 20px 0;
+      font-size: 18px;
+      line-height: 1;
+    }
+    .recomended {
+      &__caption {
+        margin: 38px 0 10px;
+        line-height: 32px;
+      }
+      &__list {
+        &-img {
+          width: 300px;
+          height: 284px;
+        }
+      }
+    }
+  }
+  &.mobile {
+    text-align: center;
+    max-width: 320px;
+    margin: 0 auto;
+    .product__name {
+      color: #282828;
+      font-size: 24px;
+      text-align: left;
+      max-width: 320px;
+      margin: 0 0 30px 35px;
+    }
+    .product__img {
+      float: none;
+      display: inline-block;
+      max-width: 320px;
+      width: 100%;
+      margin: 0 0 20px 0;
+    }
+    .product__info {
+      float: none;
+      display: inline-block;
+      text-align: left;
+      margin: 0 35px;
+      max-width: 250px;
+      width: 100%;
+    }
+    .product__share {
+      display: block;
+      margin: 30px 0;
+      .product__share-title {
+        display: none;
+      }
+      .product__share-link {
+        display: block;
+        position: initial;
+        box-shadow: none;
+        width: 100%;
+        padding: 0;
+
+        .icon {
+          display: inline-block;
+          margin-right: 10px;
+        }
+        .product__share-triangle,
+        .product__share-link__title {
+          display: none;
+        }
+        .icon__instagram {
+          margin-right: 0;
+        }
+      }
+    }
+    .product__info-description {
+      color: #282828;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+    .product__info-details {
+      display: none;
+    }
+    .product__info-price {
+      font-size: 36px;
+      display: block;
+      margin: 15px 0;
+    }
+    .product__size {
+      text-align: center;
+      &-title {
+        color: #2c303d;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 20px 0;
+        padding: 0;
+      }
+      &-list {
+        text-align: center;
+      }
+      &-label {
+        width: 37px;
+        padding: 11px 0;
+        margin: 0 0 0 28px;
+        &.first {
+          margin: 0;
+        }
+      }
+    }
+    .product__add {
+      margin: 30px 0 30px 0;
+    }
+    .recomended {
+      &__caption {
+        margin: 30px 0 0 0;
+      }
+      &__list {
+        width: 100%;
+        max-width: 320px;
+        &-item {
+          float: left;
+        }
+        &-img {
+          width: 280px;
+          height: 265px;
+        }
+      }
+    }
+  }
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+.product.tablet {
+  position: relative;
+}

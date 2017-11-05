@@ -1,1 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Oswald:700');
+
+@import './var';
+@import './container';
 @import './sprite';
+@import './icon';
+@import './recomended';
+@import './product';
+@import './share';
+@import './rating';
+@import './size';
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-kerning: normal;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+}

@@ -1,0 +1,44 @@
+.product__share {
+  position: relative;
+  display: inline-block;
+  &-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2c87ce;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &-link {
+    display: none;
+    position: absolute;
+    padding: 15px 0 15px 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    width: 271px;
+    left: -150%;
+    behavior: url(../dist/css/PIE.htc);
+    &::before {
+
+    }
+    &__title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #2c87ce;
+      display: block;
+      margin: 0 0 20px 0;
+    }
+    &-show {
+      display: block;
+    }
+  }
+  &-triangle {
+    display: block;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #ffffff;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+  }
+}
